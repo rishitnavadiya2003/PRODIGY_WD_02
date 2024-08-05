@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clock" id="clock"></div>
+        <div class="stopwatch">
+            <h1>Stopwatch</h1>
+            <div id="display">00:00:00.00</div>
+            <div class="buttons">
+                <button id="startPauseBtn">Start</button>
+                <button id="resetBtn">Reset</button>
+                <button id="lapBtn">Lap</button>
+                <button id="saveLapsBtn">Save Laps</button>
+                <button id="viewLapsBtn">View Saved Laps</button>
+                <button id="themeToggleBtn">Toggle Theme</button>
+            </div>
+            <div class="laps">
+                <h2>Laps</h2>
+                <ul id="lapsList"></ul>
+            </div>
+        </div>
+    </div>
+    <audio id="clickSound" src="beep.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

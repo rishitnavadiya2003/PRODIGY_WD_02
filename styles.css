@@ -1,0 +1,81 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --button-bg-color: #fff;
+    --button-hover-bg-color: #ddd;
+    --border-color: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+    --bg-color: #333;
+    --text-color: #f0f0f0;
+    --button-bg-color: #444;
+    --button-hover-bg-color: #555;
+    --border-color: #555;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.clock {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.stopwatch {
+    background-color: var(--button-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow-color);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#display {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--button-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.laps li {
+    padding: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
